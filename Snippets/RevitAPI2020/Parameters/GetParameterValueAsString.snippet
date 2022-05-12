@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Get Parameter Value As String</Title>
+			<Author>Maycon Freitas</Author>
+			<Description>Gets a parameter value as a string.</Description>
+			<Shortcut>rvtgetparamstr</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[string $paramValue$ = $element$?.LookupParameter("$ParameterName$")?.AsString() ?? "";]]>
+            </Code>
+            <Declarations>
+
+                <Literal>
+                    <ID>paramValue</ID>
+                    <Default>paramValue</Default>
+                    <ToolTip>The name of the varible to receive the string value of the parameter.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>element</ID>
+                    <Default>element</Default>
+                    <ToolTip>The element to look for the parameter.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>ParameterName</ID>
+                    <Default>Parameter Name</Default>
+                    <ToolTip>The name of the parameter.</ToolTip>
+                </Literal>
+
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
