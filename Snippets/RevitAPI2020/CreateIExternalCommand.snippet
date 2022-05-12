@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Create IExternal Command</Title>
+			<Author>Maycon Freitas</Author>
+			<Description>Creates a sample of a IExternal Command implemented with the main codes.</Description>
+			<Shortcut></Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[[Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+    public class $ClassName$ : IExternalCommand
+    {
+
+        #region Private Variables
+
+        private UIApplication $uiapp$;
+        private UIDocument $uidoc$;
+        private Application $app$;
+        private Document $doc$;
+
+        #endregion Private Variables
+
+
+        public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
+        {
+            $uiapp$ = commandData.Application;
+            $uidoc$ = $uiapp$.ActiveUIDocument;
+            $app$ = $uiapp$.Application;
+            $doc$ = $uidoc$.Document;
+
+            try
+            {
+                //TODO: Write your code that doesn't need a transaction down here....
+
+
+
+
+
+
+                //Created a transaction inside using block
+                using (Transaction $trans$ = new Transaction($doc$, "$TransactionName$"))
+                {
+                    //Starts the transaction
+                    $trans$.Start();
+
+                    //TODO: Write your code that needs a transaction down here....
+
+
+
+
+
+
+
+
+                    //Finishes the transaction
+                    $trans$.Commit();
+                }
+            }
+            catch (Exception e)
+            {
+                //Shows a message with the error body
+                TaskDialog.Show("Error", e.Message);
+                return Result.Failed;
+            }
+
+
+            return Result.Succeeded;
+
+        }
+    }]]>
+            </Code>
+            <Declarations>
+
+                <Literal>
+                    <ID>ClassName</ID>
+                    <Default>ClassName</Default>
+                    <ToolTip>The name of the class that you're creating. The name of your command.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>uiapp</ID>
+                    <Default>uiapp</Default>
+                    <ToolTip>The name of the varible to receive the UIApplication.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>uidoc</ID>
+                    <Default>uidoc</Default>
+                    <ToolTip>The name of the varible to receive the UIDocument.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>app</ID>
+                    <Default>app</Default>
+                    <ToolTip>The name of the varible to receive the Application.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>doc</ID>
+                    <Default>doc</Default>
+                    <ToolTip>The name of the varible to receive the Document.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>trans</ID>
+                    <Default>trans</Default>
+                    <ToolTip>The name of the varible to receive the Transaction.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>TransactionName</ID>
+                    <Default>Transaction Name</Default>
+                    <ToolTip>The name of the Transaction.</ToolTip>
+                </Literal>
+
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
