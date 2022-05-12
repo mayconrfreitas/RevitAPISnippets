@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Set Parameter Value String</Title>
+			<Author>Maycon Freitas</Author>
+			<Description>Sets a parameter value as string.</Description>
+			<Shortcut>rvtsetparamstr</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[$element$.LookupParameter("$ParameterName$").SetValueString("$valueToSet$");]]>
+            </Code>
+            <Declarations>
+
+                <Literal>
+                    <ID>valueToSet</ID>
+                    <Default>valueToSet</Default>
+                    <ToolTip>The value to be set to the parameter.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>element</ID>
+                    <Default>element</Default>
+                    <ToolTip>The element to set the parameter.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>ParameterName</ID>
+                    <Default>Parameter Name</Default>
+                    <ToolTip>The name of the parameter.</ToolTip>
+                </Literal>
+
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
