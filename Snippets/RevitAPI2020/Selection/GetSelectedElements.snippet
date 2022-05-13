@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Get Selected Elements</Title>
+			<Author>Maycon Freitas</Author>
+			<Description>Gets the elements in the model.</Description>
+			<Shortcut>rvtgetsel</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[List<ElementId> $elementsIds$ = $uidoc$.Selection.GetElementIds()?.ToList() ?? new List<ElementId>();
+                List<Element> $selectedElements$ = $elementsIds$.Count > 0 ? $elementsIds$.Select(x => $doc$.GetElement(x)).ToList() : new List<Element>();]]>
+            </Code>
+            <Declarations>
+
+                <Literal>
+                    <ID>elementsIds</ID>
+                    <Default>elementsIds</Default>
+                    <ToolTip>List to receive the ElementsIds of the selected elements in the model.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>uidoc</ID>
+                    <Default>commandData.Application.ActiveUIDocument</Default>
+                    <ToolTip>The current UIDocument (uidoc).</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>selectedElements</ID>
+                    <Default>selectedElements</Default>
+                    <ToolTip>List to receive the elements from references list.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>doc</ID>
+                    <Default>commandData.Application.ActiveUIDocument.Document</Default>
+                    <ToolTip>The current Document (doc).</ToolTip>
+                </Literal>
+
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
