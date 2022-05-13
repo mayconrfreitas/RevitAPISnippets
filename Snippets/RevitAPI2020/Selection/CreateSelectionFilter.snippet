@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Create Selection Filter</Title>
+			<Author>Maycon Freitas</Author>
+			<Description>Creates a sample of a Selection Filter code implementing ISelectionFilter interface.</Description>
+			<Shortcut>rvtselfilt</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[/// <summary>
+    /// Class to implement ISelectionFilter
+    /// </summary>
+    public class $SelectionFilter$ : Autodesk.Revit.UI.Selection.ISelectionFilter
+    {
+        /// <summary>
+        /// Variable to receive the BuiltInCategory, in case of a single category filter.
+        /// </summary>
+        private BuiltInCategory _builtInCategory;
+
+        /// <summary>
+        /// Variable to receive a list of BuiltInCategories, in case of a multiple categories filter.
+        /// </summary>
+        private List<BuiltInCategory> _builtInCategoryList;
+
+
+        /// <summary>
+        /// Variable to receive a boolean to control if a reference to a piece of geometry is permitted to be selected.
+        /// </summary>
+        private bool _allowReference;
+
+        /// <summary>
+        /// Variable to receive a boolean to control if it's a single category filter or a multiple categories filter.
+        /// </summary>
+        private bool multiCategories = false;
+
+
+        /// <summary>
+        /// Constructor for a single category filter.
+        /// </summary>
+        /// <param name="builtInCategory">BuiltIn Category that will be allowed to select.</param>
+        /// <param name="allowReference">Boolean to control if a reference to a piece of geometry is permitted to be selected.</param>
+        public $SelectionFilter$(BuiltInCategory builtInCategory, bool allowReference = true)
+        {
+            this._builtInCategory = builtInCategory;
+            this._allowReference = allowReference;
+            this.multiCategories = false;$end$
+        }
+
+
+        /// <summary>
+        /// Constructor for a multiple categories filter.
+        /// </summary>
+        /// <param name="builtInCategory">List of BuiltIn Categories that will be allowed to select.</param>
+        /// <param name="allowReference">Boolean to control if a reference to a piece of geometry is permitted to be selected.</param>
+        public $SelectionFilter$(List<BuiltInCategory> builtInCategoryList, bool allowReference = true)
+        {
+            this._builtInCategoryList = builtInCategoryList;
+            this._allowReference = allowReference;
+            this.multiCategories = true;
+        }
+
+
+        /// <summary>
+        /// Method that filters the elements that are allows to select.
+        /// </summary>
+        /// <param name="elem">Current element.</param>
+        /// <returns>Returns true or false.</returns>
+        public bool AllowElement(Element elem)
+        {
+            if (this.multiCategories)
+            {
+                foreach (BuiltInCategory builtInCategory in this._builtInCategoryList)
+                {
+                    if (MatchCategory(elem, builtInCategory)) return true;
+                }
+            }
+            else
+            {
+                if (MatchCategory(elem, this._builtInCategory)) return true;
+            }
+
+            return false;
+
+        }
+
+
+        /// <summary>
+        /// Method to control if a reference to a piece of geometry is permitted to be selected.
+        /// </summary>
+        /// <param name="reference">Current reference.</param>
+        /// <param name="position">XYZ of the reference.</param>
+        /// <returns>Returns true or false.</returns>
+        public bool AllowReference(Reference reference, XYZ position)
+        {
+            return _allowReference;
+        }
+
+
+        /// <summary>
+        /// Support method to match categories.
+        /// </summary>
+        /// <param name="element">Current element.</param>
+        /// <param name="builtInCategory">Anaysed BuiltIn Category.</param>
+        /// <returns>Returns true or false.</returns>
+        public bool MatchCategory(Element element, BuiltInCategory builtInCategory)
+        {
+            if (element != null)
+            {
+                try
+                {
+                    if (element.Category.Id.IntegerValue == (int)builtInCategory)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                catch (Exception e)
+                {
+                    if (element.Id.IntegerValue == (int)builtInCategory)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }]]>
+            </Code>
+            <Declarations>
+
+                <Literal>
+                    <ID>SelectionFilter</ID>
+                    <Default>SelectionFilter</Default>
+                    <ToolTip>The name of the class that you're creating. The name of your Selection Filter.</ToolTip>
+                </Literal>
+
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

@@ -10,7 +10,7 @@
         <Snippet>
             <Code Language="CSharp">
                 <![CDATA[//Created a transaction inside using block
-                using (Transaction $trans$ = new Transaction(doc, "$TransactionName$"))
+                using (Transaction $trans$ = new Transaction($doc$, "$TransactionName$"))
                 {
                     //Starts the transaction
                     $trans$.Start();
@@ -34,6 +34,12 @@
                     <ID>trans</ID>
                     <Default>trans</Default>
                     <ToolTip>The name of the varible to receive the Transaction.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>doc</ID>
+                    <Default>commandData.Application.ActiveUIDocument.Document</Default>
+                    <ToolTip>The current Document (doc).</ToolTip>
                 </Literal>
 
                 <Literal>
