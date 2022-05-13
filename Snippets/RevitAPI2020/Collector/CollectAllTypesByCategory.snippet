@@ -9,7 +9,7 @@
         </Header>
         <Snippet>
             <Code Language="CSharp">
-                <![CDATA[List<Element> $elements$ = new FilteredElementCollector($doc$)?
+                <![CDATA[List<Element> $elementsList$ = new FilteredElementCollector($doc$)?
                     .OfCategory($BuiltInCategory$)?
                     .WhereElementIsElementType()?
                     .ToElements()?
@@ -18,8 +18,8 @@
             <Declarations>
 
                 <Literal>
-                    <ID>elements</ID>
-                    <Default>elements</Default>
+                    <ID>elementsList</ID>
+                    <Default>elementsList</Default>
                     <ToolTip>Variable to receive the list of collected elements.</ToolTip>
                 </Literal>
 
