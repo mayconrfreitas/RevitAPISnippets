@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Collect Types By Category</Title>
+			<Author>Maycon Freitas</Author>
+			<Description>Collects all element types in the project by the builtin category.</Description>
+			<Shortcut>rvtalltypescat</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[List<Element> $elements$ = new FilteredElementCollector($doc$)?
+                    .OfCategory($BuiltInCategory$)?
+                    .WhereElementIsElementType()?
+                    .ToElements()?
+                    .ToList() ?? new List<Element>();]]>
+            </Code>
+            <Declarations>
+
+                <Literal>
+                    <ID>elements</ID>
+                    <Default>elements</Default>
+                    <ToolTip>Variable to receive the list of collected elements.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>doc</ID>
+                    <Default>doc</Default>
+                    <ToolTip>Document from where the elements will be collected.</ToolTip>
+                </Literal>
+
+                <Literal>
+                    <ID>BuiltInCategory</ID>
+                    <Default>BuiltInCategory.OST_Walls</Default>
+                    <ToolTip>The BuiltIn Category of the elements to be collected.</ToolTip>
+                </Literal>
+
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
