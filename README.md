@@ -66,9 +66,10 @@ If you have any snippets that you think might be interesting to share, follow th
 1. [Fork](https://github.com/mayconrfreitas/RevitAPISnippets/fork) this repo;
 2. Use the `template` inside [`Snippets > Templates > Charp.snippet`](./Snippets/Templates/Charp.snippet);
 3. Use the **prefix** `rvt` to name your **shortcut** (E.g.: `rvt` + `getsel` (abbreviation to Get Selection) = [`rvtgetsel`](./Snippets/RevitAPI2020/Selection/GetSelectedElements.snippet));
-4. Write your snippets in **individual files** grouped inside folders of their **respective subject** (E.g.: [rvtselfilt](./Snippets/RevitAPI2020/Selection/CreateSelectionFilter.snippet) is inside [Selection](./Snippets/RevitAPI2020/Selection/) folder);
-5. `Commit` and `Push` your changes to your forkes repo;
-6. Send a `Pull Request` to [Develop branch](https://github.com/mayconrfreitas/RevitAPISnippets/tree/develop).
+4. **Be sure** that your shortcut doesn't exist in the [Snippets List](#snippets);
+5. Write your snippets in **individual files** grouped inside folders of their **respective subject** (E.g.: [rvtselfilt](./Snippets/RevitAPI2020/Selection/CreateSelectionFilter.snippet) is inside [Selection](./Snippets/RevitAPI2020/Selection/) folder);
+6. `Commit` and `Push` your changes to your forked repo;
+7. Send a `Pull Request` to [Develop branch](https://github.com/mayconrfreitas/RevitAPISnippets/tree/develop).
 
 ### More Information
 
