@@ -12,6 +12,8 @@ Revit API snippets for Visual Studio.
 
 ## Installation
 
+## How to use
+
 ## Snippets
 
 List of snippets ready to use:
@@ -23,6 +25,12 @@ Command                                                                         
 [rvtalltypescat](./Snippets/RevitAPI2020/Collector/CollectAllTypesByCategory.snippet)           | Collects all element types in the project by the builtin category.
 [rvtgetparamdoub](./Snippets/RevitAPI2020/Parameters/GetParameterValueAsDouble.snippet)         | Gets a parameter value as a double.
 
+
+---
+
+## Contributors
+
+---
 
 ## License
 
