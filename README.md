@@ -9,9 +9,6 @@ Revit API snippets for Visual Studio.
 [![contributors](https://img.shields.io/github/contributors/mayconrfreitas/RevitAPISnippets)](../..)
 [![license](https://img.shields.io/github/license/mayconrfreitas/RevitAPISnippets)](LICENSE)
 
-## Release
-
-* [Latest release](../../releases/latest)
 
 ## License
 
