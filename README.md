@@ -10,10 +10,19 @@ Revit API snippets for Visual Studio.
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 
+## Installation
+
+## Snippets
+Command             | Description
+--------------------|-----------------------
+rvtiexcom           | [Creates a sample of a IExternal Command implemented with the main codes.](../../Snippets/RevitAPI2020/CreateIExternalCommand.snippet)
+
+
+
 ## License
 
 This project is [licensed](LICENSE) under the [MIT Licence](https://en.wikipedia.org/wiki/MIT_License).
 
 ---
 
-Do you like this package? Please [star this project on GitHub](../../stargazers)!
+Do you like this solution? Please [star this project on GitHub](../../stargazers)!
