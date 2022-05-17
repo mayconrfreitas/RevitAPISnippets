@@ -14,6 +14,12 @@ Revit API snippets for Visual Studio.
 
 ## How to use
 
+1. After the installation, type the command (as in the [Snippets List](#snippets)) `command` and press tab 2x;
+
+***GIF here showing how it's done
+
+1. The command will appear with 
+
 ## Snippets
 
 List of snippets ready to use:
@@ -29,6 +35,10 @@ Command                                                                         
 ---
 
 ## Contributors
+
+### Instructions
+
+### ???
 
 ---
 
