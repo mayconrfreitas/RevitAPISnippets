@@ -14,14 +14,19 @@ Revit API snippets for Visual Studio.
 
 ## How to use
 
-1. After the installation, type the command (as in the [Snippets List](#snippets)) `command` and press `tab` 2x;
-<p align="center">
+1. After installation, type the command (as in the [Snippets List](#snippets)) `command` and press `tab` 2x;
+<p>
 	<img width="800" src="./Source/gifs/howtouse_01.gif" alt="Revit API Snippets - Example of snippet">
 </p>
 
-2. The command will appear with 
+2. Use `tab` to navegate through fields and edit them as you wish;
+<p>
+	<img width="800" src="./Source/gifs/howtouse_02.gif" alt="Revit API Snippets - Example of snippet">
+</p>
 
+3. Press `enter` to complete the command.
 
+---
 
 ## Snippets
 
