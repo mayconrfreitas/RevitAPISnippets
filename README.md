@@ -14,11 +14,13 @@ Revit API snippets for Visual Studio.
 
 ## How to use
 
-1. After the installation, type the command (as in the [Snippets List](#snippets)) `command` and press tab 2x;
+1. After the installation, type the command (as in the [Snippets List](#snippets)) `command` and press `tab` 2x;
 
-***GIF here showing how it's done
+![Revit API Snippets - Example of snippet](./Source/gifs/01.gif)
 
-1. The command will appear with 
+2. The command will appear with 
+
+
 
 ## Snippets
 
@@ -30,6 +32,8 @@ Command                                                                         
 [rvtallinstcat](./Snippets/RevitAPI2020/Collector/CollectAllInstancesByCategory.snippett)       | Collects all instances in the project by the builtin category.
 [rvtalltypescat](./Snippets/RevitAPI2020/Collector/CollectAllTypesByCategory.snippet)           | Collects all element types in the project by the builtin category.
 [rvtgetparamdoub](./Snippets/RevitAPI2020/Parameters/GetParameterValueAsDouble.snippet)         | Gets a parameter value as a double.
+[rvtgetparamelmid](./Snippets/RevitAPI2020/Parameters/GetParameterValueAsElementId.snippet)     | Gets a parameter value as an ElementId.
+[rvtgetparamint](./Snippets/RevitAPI2020/Parameters/GetParameterValueAsInteger.snippet)         | Gets a parameter value as an integer.
 
 
 ---
