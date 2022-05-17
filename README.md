@@ -16,7 +16,7 @@ Revit API snippets for Visual Studio.
 
 1. After the installation, type the command (as in the [Snippets List](#snippets)) `command` and press `tab` 2x;
 <p align="center">
-	![Revit API Snippets - Example of snippet](./Source/gifs/01.gif)
+	<img width="500" src="./Source/gifs/01.gif" alt="Revit API Snippets - Example of snippet">
 </p>
 
 2. The command will appear with 
