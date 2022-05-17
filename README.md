@@ -12,6 +12,13 @@ Revit API snippets for Visual Studio.
 
 ## Installation
 
+1. [Download](https://github.com/mayconrfreitas/RevitAPISnippets/archive/refs/heads/main.zip) or [clone](git-client://clone?repo=https%3A%2F%2Fgithub.com%2Fmayconrfreitas%2FRevitAPISnippets) this repo;
+2. On Visual Studio, go to `Tools > Code Snippets Manager...` or press `Ctrl + K` and `Ctrl + B`;
+3. Click on Add button.
+4. Navigate to the folder where you saved this repo;
+5. Open the repo Folder > Snippets and Select the RevitAPI folder according to your Revit version (E.g.: RevitAPI2020);
+6. Click on OK.
+
 ## How to use
 
 1. After installation, type the command (as in the [Snippets List](#snippets)) `command` and press `tab` 2x;
@@ -19,7 +26,7 @@ Revit API snippets for Visual Studio.
 	<img width="800" src="./Source/gifs/howtouse_01.gif" alt="Revit API Snippets - Example of snippet">
 </p>
 
-2. Use `tab` to navegate through fields and edit them as you wish;
+2. Use `tab` to navigate through fields and edit them as you wish;
 <p>
 	<img width="800" src="./Source/gifs/howtouse_02.gif" alt="Revit API Snippets - Example of snippet">
 </p>
