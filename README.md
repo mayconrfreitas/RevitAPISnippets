@@ -15,7 +15,7 @@ Revit API snippets for Visual Studio.
 ## Snippets
 Command             | Description
 --------------------|-----------------------
-rvtiexcom           | [Creates a sample of a IExternal Command implemented with the main codes.](../Snippets/RevitAPI2020/CreateIExternalCommand.snippet)
+rvtiexcom           | [Creates a sample of a IExternal Command implemented with the main codes.](./Snippets/RevitAPI2020/CreateIExternalCommand.snippet)
 
 
 
