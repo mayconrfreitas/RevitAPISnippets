@@ -33,6 +33,12 @@ Revit API snippets for Visual Studio.
 
 3. Press `enter` to complete the command.
 
+<br />
+
+### [![Youtube logo](./Source/images/youtube-logo.png)](https://youtu.be/moD7CYUkJHw) Watch this [video](https://youtu.be/moD7CYUkJHw) to see a more detailed use of Revit API snippets.
+
+<br />
+
 ---
 
 ## Snippets
@@ -64,7 +70,7 @@ If you have any snippets that you think might be interesting to share, follow th
 
 ### Instructions
 1. [Fork](https://github.com/mayconrfreitas/RevitAPISnippets/fork) this repo;
-2. Use the `template` inside [`Snippets > Templates > Charp.snippet`](./Snippets/Templates/Charp.snippet);
+2. Use the `template` inside [`Snippets > Templates > Csharp.snippet`](./Snippets/Templates/Csharp.snippet);
 3. Use the **prefix** `rvt` to name your **shortcut** (E.g.: `rvt` + `getsel` (abbreviation to Get Selection) = [`rvtgetsel`](./Snippets/RevitAPI2020/Selection/GetSelectedElements.snippet));
 4. **Be sure** that your shortcut doesn't exist in the [Snippets List](#snippets);
 5. Write your snippets in **individual files** grouped inside folders of their **respective subject** (E.g.: [rvtselfilt](./Snippets/RevitAPI2020/Selection/CreateSelectionFilter.snippet) is inside [Selection](./Snippets/RevitAPI2020/Selection/) folder);
