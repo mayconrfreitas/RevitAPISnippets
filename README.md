@@ -3,10 +3,11 @@
 Revit API snippets for Visual Studio.
 
 [![Visual Studio 2019](https://img.shields.io/badge/Visual%20Studio%202019-16.11.7+-blue)](../..)
-[![Stars](https://img.shields.io/github/stars/mayconrfreitas/RevitAPISnippets)](../..)
-[![Forks](https://img.shields.io/github/forks/mayconrfreitas/RevitAPISnippets)](../..)
-[![Issues](https://img.shields.io/github/issues/mayconrfreitas/RevitAPISnippets)](../..)
-[![Contributors](https://img.shields.io/github/contributors/mayconrfreitas/RevitAPISnippets)](../..)
+[![Stars](https://img.shields.io/github/stars/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/stargazers)
+[![Forks](https://img.shields.io/github/forks/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/fork)
+[![Issues](https://img.shields.io/github/issues-raw/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/issues)
+[![Issues](https://img.shields.io/github/issues-closed-raw/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/issues?q=is%3Aissue+is%3Aclosed)
+[![Contributors](https://img.shields.io/github/contributors/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/graphs/contributors)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 
