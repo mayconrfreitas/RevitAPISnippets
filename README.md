@@ -4,7 +4,7 @@ Revit API snippets for Visual Studio.
 
 [![Visual Studio 2019](https://img.shields.io/badge/Visual%20Studio%202019-16.11.7+-blue)](../..)
 [![Stars](https://img.shields.io/github/stars/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/stargazers)
-[![Forks](https://img.shields.io/github/forks/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/fork)
+[![Forks](https://img.shields.io/github/forks/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/network/members)
 [![Issues](https://img.shields.io/github/issues-raw/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/issues)
 [![Issues](https://img.shields.io/github/issues-closed-raw/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/issues?q=is%3Aissue+is%3Aclosed)
 [![Contributors](https://img.shields.io/github/contributors/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/graphs/contributors)
