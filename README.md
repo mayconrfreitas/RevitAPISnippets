@@ -28,7 +28,7 @@ Revit API snippets for Visual Studio.
 	<img width="800" src="./Source/gifs/howtouse_01.gif" alt="Revit API Snippets - Example of snippet">
 </p>
 
-2. Use `tab` to navigate through fields and edit them as you wish;
+2. Use <kbd>tab</kbd> to navigate through fields and edit them as you wish;
 <p>
 	<img width="800" src="./Source/gifs/howtouse_02.gif" alt="Revit API Snippets - Example of snippet">
 </p>
