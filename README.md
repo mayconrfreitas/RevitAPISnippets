@@ -2,7 +2,8 @@
 
 Revit API snippets for Visual Studio.
 
-[![Visual Studio 2019](https://img.shields.io/badge/Visual%20Studio%202019-16.11.7+-blue)](../..)
+[![Visual Studio 2019](https://img.shields.io/badge/Visual%20Studio%202019-16.11.7+-blue)](#)
+[![Release](https://img.shields.io/github/v/release/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/releases)
 [![Stars](https://img.shields.io/github/stars/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/stargazers)
 [![Forks](https://img.shields.io/github/forks/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/network/members)
 [![Issues](https://img.shields.io/github/issues-raw/mayconrfreitas/RevitAPISnippets)](https://github.com/mayconrfreitas/RevitAPISnippets/issues)
