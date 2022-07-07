@@ -27,19 +27,19 @@ Download the Settings File (.zip) for Rider and Import to your project. You can 
 
 After download, open Rider. Click on File > Manage IDE Settings > Import Settings... 
 
-![](.\Source\images\rider_importSettings.png)
+![](./Source/images/rider_importSettings.png)
 
 Navigate to the zip file downloaded and click "Select Folder".
 
-![](.\Source\images\rider_importSettingsDialog.png)
+![](./Source/images/rider_importSettingsDialog.png)
 
 You should see a new dialog display that asks if you desire to import the Live Templates
 
-![](.\Source\images\rider_importSettingsSelection.png)
+![](./Source/images/rider_importSettingsSelection.png)
 
 Finally, Restart Rider.
 
-![](.\Source\images\rider_importSettingsFinal.png)
+![](./Source/images/rider_importSettingsFinal.png)
 
 ## How to use
 
@@ -69,7 +69,7 @@ Below is a hyperlink to each individual .snippet for Visual Studio. JetBrains Ri
 
 List of snippets ready to use:
 
-| Command (Visual Studio)                                                                        | Description                                                                          |
+| Command                                                                       | Description                                                                          |
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | [rvtiexcom](./Snippets/RevitAPI2020/CreateIExternalCommand.snippet)                            | Creates a sample of a IExternal Command implemented with the main codes.             |
 | [rvtallinstcat](./Snippets/RevitAPI2020/Collector/CollectAllInstancesByCategory.snippett)      | Collects all instances in the project by the builtin category.                       |
